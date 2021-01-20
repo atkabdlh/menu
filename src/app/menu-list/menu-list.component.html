@@ -1,0 +1,17 @@
+<div>
+  <h3>Menu List</h3>
+
+  <table>
+    <tbody>
+    <tr *ngFor="let item of list">
+      <td>
+        <label>
+          <input type="checkbox" (click)="select(item)" [checked]="item.selected">
+          <span>{{ item.itemName }}</span>
+        </label>
+      </td>
+      <td><button (click)="deleteItem(item.id)">Delete</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
