@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "menu-e84ee"
+  },
+  "targets": {
+    "menu-7d96b": {
+      "hosting": {
+        "menu": [
+          "menu-7d96b"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "target": "menu",
+    "public": "dist/menu",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

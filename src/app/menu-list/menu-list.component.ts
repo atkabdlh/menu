@@ -20,9 +20,9 @@ export class MenuListComponent implements OnInit {
     this.itemService.getItems().subscribe((res) => {
       this.list = res.map((item) => {
         return {
-          ...item.payload.doc.data(),
-          id: item.payload.doc.id
-        } as Item;
+          id: item.payload.doc.id,
+          ...item.payload.doc.data() as Item
+        };
       });
     });
   }
@@ -32,13 +32,14 @@ export class MenuListComponent implements OnInit {
   }
 
   select(item) {
-    let newItem = {};
-    console.log(item);
-    newItem.id = item.id;
-    newItem.itemName = item.itemName;
-    newItem.itemDesc = item.itemDesc;
-    newItem.price = item.price;
-    if (item.selected == true) {
+    const newItem: Item = {
+      id: item.id,
+      itemName: item.itemName,
+      itemDesc: item.itemDesc,
+      price: item.price,
+      selected: item.selected
+    };
+    if (item.selected === true) {
       newItem.selected = false;
     } else {
       newItem.selected = true;
