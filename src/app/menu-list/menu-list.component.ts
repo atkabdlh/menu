@@ -32,13 +32,7 @@ export class MenuListComponent implements OnInit {
   }
 
   select(item) {
-    const newItem: Item = {
-      id: item.id,
-      itemName: item.itemName,
-      itemDesc: item.itemDesc,
-      price: item.price,
-      selected: item.selected
-    };
+    const newItem: Item = item;
     if (item.selected === true) {
       newItem.selected = false;
     } else {

@@ -1,7 +1,39 @@
 nav{
-  background-color: #64b5f6;
-  color: whitesmoke;
-  margin: auto;
+
 }
 
+svg{
+  margin: auto 10px;
+}
 
+table{
+  margin: 10px auto;
+}
+
+tr{
+  height: 30px;
+}
+
+td{
+  width: 300px;
+  text-align: center;
+}
+
+a{
+  color: #fff176;
+  text-decoration: none;
+
+}
+
+a:hover{
+  color: #1976d2;
+}
+
+a:active{
+  font-size: smaller;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: auto 30%;
+}
