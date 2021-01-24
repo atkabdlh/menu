@@ -19,6 +19,13 @@ button{
   color: #1976d2;
 }
 
+button:hover{
+  background-color: #1976d2;
+  color: #fff176;
+  border: 1px solid #1976d2;
+  cursor: pointer;
+}
+
 #checkbox-col{
   width: 30px;
 }
@@ -28,6 +35,3 @@ button{
   text-align: left;
 }
 
-#delete-col{
-  //width: 80px;
-}

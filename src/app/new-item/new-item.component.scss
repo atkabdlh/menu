@@ -29,6 +29,13 @@ button{
   color: #1976d2;
 }
 
+button:hover{
+  background-color: #1976d2;
+  color: #fff176;
+  border: 1px solid #1976d2;
+  cursor: pointer;
+}
+
 #desc-input{
   height: 70px;
   line-height: 70px;

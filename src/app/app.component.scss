@@ -2,21 +2,30 @@ nav{
 
 }
 
+div{
+  margin: 20px 10px 0 10px;
+  //display: grid;
+  //grid-template-columns: auto 30%;
+}
+
 svg{
   margin: auto 10px;
 }
 
-table{
-  margin: 10px auto;
+path:hover{
+  fill: #1976d2;
 }
 
-tr{
-  height: 30px;
+ul{
+  list-style-type: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+  float: right;
 }
 
-td{
-  width: 300px;
-  text-align: center;
+li{
+  display: inline;
+  margin: 10px;
 }
 
 a{
@@ -33,7 +42,3 @@ a:active{
   font-size: smaller;
 }
 
-.container{
-  display: grid;
-  grid-template-columns: auto 30%;
-}
