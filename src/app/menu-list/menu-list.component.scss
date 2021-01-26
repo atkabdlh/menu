@@ -1,37 +1,31 @@
-div{
-  width: 50%;
-  margin: auto;
-  text-align: center;
+h1{
+  font-family: 'Parisienne', cursive;
+  color: #E99B46;
+  text-align: left;
+  margin-left: 300px;
 }
 
 table{
-  margin: auto;
+  text-align: left;
+  margin-left: 300px;
 }
 
-button{
-  height: 30px;
-  width: 70px;
-  margin: 2px;
-  background-color: #fff176;
-  border-radius: 4px;
-  border: 1px solid #ffee58;
-  font-family: "Century Gothic", CenturyGothic, AppleGothinc, sans-serif;
-  color: #1976d2;
-}
-
-button:hover{
-  background-color: #1976d2;
-  color: #fff176;
-  border: 1px solid #1976d2;
+a:hover{
   cursor: pointer;
 }
 
-#checkbox-col{
-  width: 30px;
+.cb-td{
+  height: 40px;
+  width: 50px;
 }
 
-#name-col{
+.name-td{
+  height: 40px;
   width: 200px;
-  text-align: left;
+  vertical-align: center;
 }
 
+.delete-td{
+  height: 40px;
+  width: 50px;
+}

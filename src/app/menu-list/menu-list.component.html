@@ -1,17 +1,29 @@
-<div>
-  <h2>Menu List</h2>
+<h1>Menu List</h1>
 
-  <table>
-    <tbody>
-    <tr *ngFor="let item of list">
-      <td id="checkbox-col">
-        <label>
-          <input type="checkbox" (click)="select(item)" [checked]="item.selected">
-        </label>
-      </td>
-      <td id="name-col">{{ item.itemName }}</td>
-      <td id="delete-col"><button (click)="deleteItem(item.id)">Delete</button></td>
-    </tr>
-    </tbody>
-  </table>
-</div>
+<table>
+  <tbody>
+  <tr *ngFor="let item of list">
+    <td class="cb-td">
+      <a *ngIf="item.selected == true" (click)="select(item)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  stroke="#e99b46" fill="none" stroke-width="3">
+          <path d="M5.316 23.684c-5.088-5.0879-5.088-13.2801 0-18.368s13.2801-5.088 18.368 0 5.088 13.2801 0 18.368-13.2801 5.088-18.368 0z"/>
+          <path d="M9.7368 14.5065l3.893 3.893 6.9318-6.9318"/>
+        </svg>
+      </a>
+      <a *ngIf="item.selected == false" (click)="select(item)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+          <path d="M5.316 23.684c-5.088-5.088-5.088-13.2801 0-18.368s13.28-5.088 18.368 0 5.0879 13.28 0 18.368-13.2801 5.0879-18.368 0z" fill="none" stroke="#e99b46" stroke-width="3"/>
+        </svg>
+      </a>
+    </td>
+    <td class="name-td">{{ item.itemName }}</td>
+    <td class="delete-td">
+      <a (click)="deleteItem(item.id)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29"  stroke="#e99b46" fill="none" stroke-width="3">
+          <path d="M5.316 23.684c-5.088-5.088-5.088-13.2801 0-18.368s13.28-5.088 18.368 0 5.0879 13.28 0 18.368-13.2801 5.0879-18.368 0z"/>
+          <path d="M19.2615 9.7381l-9.5247 9.5247m9.5247 0L9.7372 9.7377"/>
+        </svg>
+      </a>
+  </tr>
+  </tbody>
+</table>

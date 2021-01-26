@@ -1,42 +1,63 @@
-form{
-  width: 60%;
-  margin: auto;
-  text-align: center;
+h1{
+  font-family: 'Parisienne', cursive;
+  color: #E99B46;
+  text-align: left;
+  margin-left: 300px;
 }
 
-input[type=text]{
-  border: 1px solid #b3b2b2;
-  border-radius: 4px;
+form{
+  width: 60%;
+  margin-left: 300px;
+  text-align: left;
+}
+
+label{
+  font-family: 'Parisienne', cursive;
+  font-weight: bold;
+  font-size: 24px;
+  color: #FFD783;
+}
+
+input[type=text], input[type=textarea]{
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px double #E99B46;
   height: 30px;
   width: 300px;
-  padding: 2px 10px;
+  //padding: 2px 10px;
   margin: 2px;
-  font-family: "Century Gothic", CenturyGothic, AppleGothinc, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: #E99B46;
 }
 
 input[type=text]:focus{
   outline: none;
 }
 
-button{
-  height: 30px;
-  width: 70px;
+textarea{
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px double #E99B46;
+  resize: none;
+  height: 50px;
+  width: 300px;
+  //padding: 2px 10px;
   margin: 2px;
-  background-color: #fff176;
-  border-radius: 4px;
-  border: 1px solid #ffee58;
-  font-family: "Century Gothic", CenturyGothic, AppleGothinc, sans-serif;
-  color: #1976d2;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: #E99B46;
 }
 
-button:hover{
-  background-color: #1976d2;
-  color: #fff176;
-  border: 1px solid #1976d2;
+textarea:focus{
+  outline: none;
+}
+
+a{
   cursor: pointer;
-}
-
-#desc-input{
-  height: 70px;
-  line-height: 70px;
+  margin-left: 300px;
 }

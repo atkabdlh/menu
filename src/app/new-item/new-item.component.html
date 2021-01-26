@@ -1,6 +1,19 @@
-<form [formGroup]="itemForm" (ngSubmit)="addItem(itemForm.value)">
-  <input formControlName="itemName" type="text" placeholder="Name"><br>
-  <input id="desc-input" formControlName="itemDesc" type="text" placeholder="Description"><br>
-  <input formControlName="price" type="text" placeholder="Price"><br>
-  <button type="submit">Add</button>
+<h1>Add a Dish</h1>
+
+<form [formGroup]="itemForm">
+  <label>Name</label><br>
+  <input formControlName="itemName" type="text"><br><br>
+
+  <label>Description</label><br>
+  <textarea formControlName="itemDesc"></textarea><br><br>
+
+  <label>Price</label><br>
+  <input formControlName="price" type="text"><br><br>
+
+  <a (click)="addItem(itemForm.value)">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  stroke="#e99b46" fill="none" stroke-width="3">
+      <path d="M1.5 14.5c0-7.202 5.798-13 13-13s13 5.798 13 13-5.798 13-13 13-13-5.798-13-13z"/>
+      <path d="M14.5 7.5667v13.8667M21.4334 14.5H7.5667"/>
+    </svg>
+  </a>
 </form>

@@ -1,19 +1,7 @@
-nav{
-
-}
-
 div{
-  margin: 20px 10px 0 10px;
-  //display: grid;
-  //grid-template-columns: auto 30%;
-}
-
-svg{
-  margin: auto 10px;
-}
-
-path:hover{
-  fill: #1976d2;
+  margin: 20px;
+  display: block;
+  height: 40px;
 }
 
 ul{
@@ -29,13 +17,16 @@ li{
 }
 
 a{
-  color: #fff176;
+  font-family: 'Parisienne', cursive;
+  font-weight: bold;
+  font-size: 20px;
+  color: #C68C64;
   text-decoration: none;
 
 }
 
 a:hover{
-  color: #1976d2;
+  color: #FFD783;
 }
 
 a:active{
